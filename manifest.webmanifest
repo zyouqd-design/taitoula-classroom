@@ -1,0 +1,13 @@
+{
+  "name": "抬头啦 · 课堂观察",
+  "short_name": "抬头啦",
+  "description": "课堂到课、面向教学区比例与识别覆盖率的本地化统计工具",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f3f6f8",
+  "theme_color": "#11243d",
+  "orientation": "any",
+  "icons": [
+    {"src":"icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
