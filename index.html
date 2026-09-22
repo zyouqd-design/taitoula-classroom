@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#11243d" />
+  <meta name="description" content="课堂到课、面向教学区比例与覆盖率的本地化统计工具" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>抬头啦 · 课堂观察</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="icon-btn" id="backBtn" aria-label="返回" hidden>‹</button>
+      <div class="brand">
+        <span class="brand-mark">抬</span>
+        <div><strong>抬头啦</strong><small>课堂观察 · 本地模式</small></div>
+      </div>
+      <button class="pill ghost" id="installBtn" hidden>安装</button>
+    </header>
+
+    <main id="app" aria-live="polite"></main>
+
+    <nav class="bottom-nav" id="bottomNav">
+      <button data-route="home" class="active"><span>⌂</span>首页</button>
+      <button data-route="classes"><span>▦</span>班级</button>
+      <button data-route="reports"><span>⌁</span>报告</button>
+      <button data-route="settings"><span>⚙</span>设置</button>
+    </nav>
+  </div>
+
+  <template id="toastTemplate"><div class="toast"></div></template>
+  <script src="app.js" defer></script>
+</body>
+</html>
